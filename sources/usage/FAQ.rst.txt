@@ -1,0 +1,82 @@
+Frequently asked question
+==========================
+
+How do I cite FitHiChIP?
+-------------------------
+
+FitHiChIP should be cited as:
+
+Sourya Bhattacharyya, Vivek Chandra, Pandurangan Vijayanand, and Ferhat Ay, *FitHiChIP: Identification of significant chromatin contacts from HiChIP data*, preprint at <https://www.biorxiv.org/content/early/2018/09/10/412833>, DOI: <https://doi.org/10.1101/412833>
+
+
+I do not know anything about HiChIP. What should I do?
+---------------------------------------------------------
+
+In addition to read the FitHiChIP paper, users are requested to read the following papers for a 
+detailed understanding of HiC and HiChIP protocols.
+
+
+HiChIP protocol papers:
+
+	1. https://www.ncbi.nlm.nih.gov/pubmed/27643841 (HiChIP)
+
+	2. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5143423/ (PLAC-seq)
+
+Hi-C related basic papers:
+
+	1. https://www.ncbi.nlm.nih.gov/pubmed/26328929 (a comprehensive review)
+
+	2. https://www.ncbi.nlm.nih.gov/pubmed/19815776
+
+	3. https://www.ncbi.nlm.nih.gov/pubmed/25497547
+	
+
+HiC-pro paper:
+
+	https://www.ncbi.nlm.nih.gov/pubmed/26619908
+
+FitHiC paper (for significant interaction calling from Hi-C data)
+
+	https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4032863/
+
+
+How to install HiC-pro in the system?
+-----------------------------------------
+
+HiC-pro is available through GitHub <https://github.com/nservant/HiC-Pro> (corresponding documentation is available in <http://nservant.github.io/HiC-Pro/>). The simple way is to either download GitHub archieve in a zipped format, or to clone the repository. Then, user needs to perform the following steps:
+
+	1. (Extract the zipped archieve if downloaded.) Go to the directory containing HiC-pro (generally inside the folder name **HiC-Pro-master**)
+
+	2. Edit the file **config-install.txt** by specifying the path names of required packages.
+
+	3. Type **make configure** in the command line, and press enter.
+
+	4. Once configuration is performed, type **make CONFIG_SYS=config-install.txt install** in the command line, and press enter. Successful execution of this command would install HiC-pro in a folder named **HiC-Pro_*VERSIONNAME***
+
+
+How to specify the HiC-pro base installation directory in the FitHiChIP configuration file?
+---------------------------------------------------------------------------------------------------
+
+Specify the absolute path of the HiC-pro installation directory **HiC-Pro_*VERSIONNAME*** in the configuration file.
+
+
+How to visualize the FitHiChIP loops in genome browser?
+-----------------------------------------------------------
+
+FitHiChIP supports using WashU epigenome browser for visualizing significant loops. For details, please check 
+the page :ref:`Details of FitHiChIP outputs` for a detailed description.
+
+
+What type of interactions are supported in FitHiChIP?
+-----------------------------------------------------------
+
+Currently FitHiChIP supports finding statistically significant CIS interactions. The foreground (output interaction type) depends on the option **IntType** (parameter B.5 in :ref:`Setting up configuration file`). Default mode of FitHiChIP is to report peak-to-all interactions (one end is a peak, while the other end may or may not be a peak).
+
+
+
+
+
+
+
+
+
