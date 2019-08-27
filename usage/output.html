@@ -1,157 +1,185 @@
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Details of FitHiChIP outputs &#8212; FitHiChIP 0.1 documentation</title>
-    <link rel="stylesheet" href="../static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
-    <script type="text/javascript" src="../static/language_data.js"></script>
-    <script type="text/javascript" src="../static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../static/bootstrap-sphinx.js"></script>
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Details of FitHiChIP outputs &mdash; FitHiChIP 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+        <script type="text/javascript" src="../static/jquery.js"></script>
+        <script type="text/javascript" src="../static/underscore.js"></script>
+        <script type="text/javascript" src="../static/doctools.js"></script>
+        <script type="text/javascript" src="../static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Differential analysis of HiChIP loops" href="DiffLoops.html" />
-    <link rel="prev" title="Setting up configuration file" href="configuration.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="prev" title="Setting up configuration file" href="configuration.html" /> 
+</head>
 
-  </head><body>
+<body class="wy-body-for-nav">
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">
-          FitHiChIP</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
 
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
+          
+            <a href="../index.html" class="icon icon-home"> FitHiChIP
+          
+
+          
+          </a>
+
+          
             
             
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="../index.html">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul class="current">
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Setting up configuration file</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Details of FitHiChIP outputs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Details of FitHiChIP outputs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#summary-html-file">Summary HTML file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#details-of-output-files">Details of output files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#visualizing-significant-interactions-in-washu-epigenome-browser">Visualizing significant interactions in WashU epigenome browser</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#using-current-version">Using current version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-legacy-version">Using legacy version</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#visualizing-significant-interactions-in-ucsc-genome-browser">Visualizing significant interactions in UCSC genome browser</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="DiffLoops.html">Differential analysis of HiChIP loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Various utility scripts / functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently asked question</a></li>
 </ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Details of FitHiChIP outputs</a><ul>
-<li><a class="reference internal" href="#summary-html-file">Summary HTML file</a></li>
-<li><a class="reference internal" href="#details-of-output-files">Details of output files</a></li>
-<li><a class="reference internal" href="#visualizing-significant-interactions-in-washu-epigenome-browser">Visualizing significant interactions in WashU epigenome browser</a><ul>
-<li><a class="reference internal" href="#using-current-version">Using <strong>current</strong> version</a></li>
-<li><a class="reference internal" href="#using-legacy-version">Using <strong>legacy</strong> version</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#visualizing-significant-interactions-in-ucsc-genome-browser">Visualizing significant interactions in UCSC genome browser</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-  <li>
-    <a href="configuration.html" title="Previous Chapter: Setting up configuration file"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Setting up co...</span>
-    </a>
-  </li>
-  <li>
-    <a href="DiffLoops.html" title="Next Chapter: Differential analysis of HiChIP loops"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Differential ... &raquo;</span>
-    </a>
-  </li>
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="../sources/usage/output.rst.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
 
-          
             
-<form class="navbar-form navbar-right" action="../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
           
         </div>
-    </div>
-  </div>
+      </div>
+    </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 content">
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
       
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FitHiChIP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Details of FitHiChIP outputs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../sources/usage/output.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="details-of-fithichip-outputs">
 <h1>Details of FitHiChIP outputs<a class="headerlink" href="#details-of-fithichip-outputs" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="summary-html-file">
 <h2>Summary HTML file<a class="headerlink" href="#summary-html-file" title="Permalink to this headline">¶</a></h2>
-<p>Suppose <strong>OutDir</strong> denotes the specified output directory in the configuration file.</p>
-<p>Then, successful execution of FitHiChIP pipeline generates an HTML file <strong>Summary_results_FitHiChIP.html</strong> within this output directory <strong>OutDir</strong>.</p>
-<p>This file lists all output files generated from the FitHiChIP pipeline, according to the given input parameters.</p>
+<p>Successful execution of FitHiChIP pipeline generates an HTML file <strong>Summary_results_FitHiChIP.html</strong> within the output directory <strong>OutDir</strong> specified in the configuration file. This file lists the output files containing significant interactions from the FitHiChIP pipeline, according to the given input parameters.</p>
 </div>
 <div class="section" id="details-of-output-files">
 <h2>Details of output files<a class="headerlink" href="#details-of-output-files" title="Permalink to this headline">¶</a></h2>
 <p>Here we describe all the files and folders existing within the specified output directory <strong>OutDir</strong>.</p>
-<p>User may additionally open this page <a class="reference internal" href="configuration.html#setting-up-configuration-file"><span class="std std-ref">Setting up configuration file</span></a> for checking the configuration parameters and analyzing the below mentioned output files and folders:</p>
+<p>User should additionally open this page <a class="reference internal" href="configuration.html#setting-up-configuration-file"><span class="std std-ref">Setting up configuration file</span></a> to tally with the configuration parameters:</p>
 <blockquote>
 <div><ol class="arabic">
 <li><p class="first"><strong>Parameters.txt</strong>: file listing the parameters used.</p>
 </li>
 <li><p class="first"><strong>HiCPro_Matrix_BinSize”BINSIZE”</strong>:</p>
 <blockquote>
-<div><p>If the parameters (A.2) and (A.3) are empty, this folder contains the interaction matrix files generated from the input valid pairs file.</p>
-<p>The interaction matrix files are <em>MatrixHiCPro_abs.bed</em> and <em>MatrixHiCPro.matrix</em>.</p>
+<div><p>Folder name is according to the parameter (B.6).</p>
+<p>If the parameters (A.2) and (A.3) are empty, this directory contains the interaction matrix files (named as <em>MatrixHiCPro_abs.bed</em> and <em>MatrixHiCPro.matrix</em>) generated from the input valid pairs file (parameter A.1).</p>
 <ul>
 <li><p class="first"><strong>*.interactions.initial.bed</strong>: CIS locus pairs along with their contact counts, corresponding to the input valid pairs (or contact matrix).</p>
 </li>
@@ -165,13 +193,11 @@
 </ul>
 </div></blockquote>
 </li>
-</ol>
-<ol class="arabic" start="4">
 <li><p class="first"><strong>NormFeatures</strong>:</p>
 <blockquote>
-<div><p>Folder containing various statistical features computed for individual genomic intervals / bins (with respect to the specified bin size).</p>
+<div><p>Folder containing various statistical features computed for individual genomic intervals / bins (with respect to the specified “BINSIZE”).</p>
 <ul>
-<li><p class="first">User should specifically look at the file <strong>*.AllBin_CompleteFeat.bed</strong>, having the following format:</p>
+<li><p class="first">User should specifically look at the file <strong>*.AllBin_CompleteFeat.bed</strong>, which has the following format:</p>
 <blockquote>
 <div><ul class="simple">
 <li>Columns 1 to 3: chromosome bin.</li>
@@ -187,13 +213,18 @@
 </li>
 <li><p class="first"><strong>FitHiChIP_”INTTYPE”_b”BINSIZE”_L”l”_U”u”</strong></p>
 <blockquote>
-<div><p>Folder according to the specified foreground (type of interactions to be reported) as per the parameter B.5, bin size (parameter B.6),
-and the distance thresholds (parameters B.7 and B.8)</p>
-<ul class="simple">
-<li>INTTYPE is a string with values ALL2ALL (when the parameter (B.5) = 4), Peak2Peak (parameter (B.5) = 1), Peak2NonPeak (parameter (B.5) = 2), or</li>
-</ul>
-<p>Peak2ALL (parameter (B.5) = 3).</p>
+<div><p>Folder according to the specified foreground (type of interactions to be reported; parameter B.5), bin size (parameter B.6), and the distance thresholds (parameters B.7 and B.8)</p>
 <ul>
+<li><p class="first">INTTYPE is a string with one of the following values:</p>
+<blockquote>
+<div><ul class="simple">
+<li>ALL2ALL (when the parameter B.5 = 4)</li>
+<li>Peak2Peak (parameter B.5 = 1),</li>
+<li>Peak2NonPeak (parameter B.5 = 2), or</li>
+<li>Peak2ALL (parameter B.5 = 3).</li>
+</ul>
+</div></blockquote>
+</li>
 <li><p class="first">Within this folder, a directory structure of the following name (pattern) is created:</p>
 <blockquote>
 <div><p><strong>P2PBckgr_[UseP2PBackgrnd]/[BiasType]</strong></p>
@@ -203,57 +234,58 @@ and the distance thresholds (parameters B.7 and B.8)</p>
 <p>Where:</p>
 <blockquote>
 <div><ul class="simple">
-<li>[UseP2PBackgrnd]: Value of the parameter (B.10)</li>
+<li>[UseP2PBackgrnd]: Value of the parameter (B.10) - 0 (loose background) or 1 (stringent background).</li>
 <li>[BiasType]: A string, either “Coverage_Bias” or “ICE_Bias”, according to the parameter (B.11).</li>
 </ul>
 </div></blockquote>
 <ul>
 <li><p class="first">Within this directory, following files are important:</p>
 <blockquote>
-<div><ul class="simple">
-<li><strong>Interactions.sortedGenDist.bed</strong>: Interactions sorted by increasing genomic distance. Used as the input to FitHiChIP.</li>
-<li><strong>FitHiC_BiasCorr</strong>:</li>
-</ul>
-<p>Within this folder, following files and folders reside:</p>
+<div><ul>
+<li><p class="first"><strong>Interactions.sortedGenDist.bed</strong>: Interactions sorted by increasing genomic distance. Used as the input to FitHiChIP.</p>
+</li>
+<li><p class="first"><strong>FitHiC_BiasCorr</strong>: Directory containing the significant interactions:</p>
 <blockquote>
 <div><ul>
 <li><p class="first"><strong>Bin_Info.log</strong>: Equal occupancy bins employed in FitHiChIP</p>
 </li>
-<li><p class="first"><strong>configuration.txt</strong>: list of configuration parameters for FitHiChIP</p>
+<li><p class="first"><strong>configuration.txt</strong>: list of configuration parameters for calling significant interactions from FitHiChIP</p>
 </li>
-<li><p class="first"><strong>*PREFIX*.interactions_FitHiC.bed</strong>: Lists all interactions along with their significance (p-value and FDR) computed using FitHiChIP.</p>
+<li><p class="first"><strong>*PREFIX*.interactions_FitHiC.bed</strong>: Lists all input interactions along with their significance (p-value and FDR) computed using FitHiChIP.</p>
 <blockquote>
-<div><div class="admonition note">
+<div><ul class="simple">
+<li>Value of <strong>PREFIX</strong> is provided in the configuration parameter (B.13)</li>
+</ul>
+<div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">For differential analysis of HiChIP loops (page <a class="reference internal" href="DiffLoops.html#differential-analysis-of-hichip-loops"><span class="std std-ref">Differential analysis of HiChIP loops</span></a>), this file is to be provided as input.</p>
+<p class="last"><strong>Important:</strong> For differential analysis of HiChIP loops (page <a class="reference internal" href="DiffLoops.html#differential-analysis-of-hichip-loops"><span class="std std-ref">Differential analysis of HiChIP loops</span></a>), this file (containing all interactions along with FitHiChIP significance values) is to be provided as input.</p>
 </div>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”.bed</strong>:</p>
 <blockquote>
-<div><p>Significant interactions according to the q-value threshold (qval) specified in parameter (B.9).</p>
-<p>For example, if qval=0.01 (default), the file name becomes <strong>*PREFIX*.interactions_FitHiC_Q0.01.bed</strong>.</p>
+<div><p>FitHiChIP generated set of significant interactions according to the q-value threshold (QVALUE) specified in parameter (B.9).</p>
+<p>For example, if QVALUE=0.01 (default), the file name becomes <strong>*PREFIX*.interactions_FitHiC_Q0.01.bed</strong>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<ol class="last arabic">
-<li><p class="first">This file is the set of significant interactions generated by FitHiChIP, without applying any merge filtering.</p>
-</li>
-<li><p class="first">For peak-to-all foreground (default output mode), if <strong>UseP2PBackgrnd</strong> = 0, then this set of loops refer to FitHiChIP(L).</p>
-</li>
-<li><p class="first">If <strong>UseP2PBackgrnd</strong> = 1, this set of loops refer to FitHiChIP(S) output.</p>
-</li>
-<li><p class="first">For a custom FDR threshold (say 0.05), user may use the following awk script to generate the significant interactions.</p>
-<blockquote>
-<div><p>awk ‘$NF&lt;0.05’ <em>PREFIX</em>.interactions_FitHiC.bed &gt; FitHiChIP_out_Q0.05.bed</p>
-</div></blockquote>
-</li>
+<ol class="last arabic simple">
+<li><strong>Important:</strong> This file is the set of significant interactions generated by FitHiChIP, without any merge filtering.</li>
+<li>For peak-to-all foreground (default output mode), if <strong>UseP2PBackgrnd</strong> = 0, then these loops refer to FitHiChIP(L) output.</li>
+<li>If <strong>UseP2PBackgrnd</strong> = 1, these loops refer to FitHiChIP(S) output.</li>
 </ol>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If user requires loops filtered by a FDR threshold different from the parameter QVALUE (say the custom threshold is 0.05 and the QVALUE is 0.01), user may employ the following awk script to generate the significant interactions.</p>
+<blockquote class="last">
+<div><p><strong>awk ‘$NF&lt;0.05’ *PREFIX*.interactions_FitHiC.bed &gt; FitHiChIP_out_Q0.05.bed</strong></p>
+</div></blockquote>
 </div>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”_WashU.bed.*</strong>:</p>
+<li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”_WashU.bed.gz.*</strong>:</p>
 <blockquote>
-<div><p>Significant FitHiChIP loops converted to WashU epigenome browser compatible format.</p>
+<div><p>Significant FitHiChIP loops (<strong>*PREFIX*.interactions_FitHiC_Q”qval”.bed</strong>) converted to WashU epigenome browser compatible format.</p>
 </div></blockquote>
 </li>
 <li><p class="first"><strong>Merge_Nearby_Interactions</strong>:</p>
@@ -267,14 +299,14 @@ and the distance thresholds (parameters B.7 and B.8)</p>
 <p class="first admonition-title">Note</p>
 <ol class="last arabic simple">
 <li>For peak-to-all foreground (default output mode), if <strong>UseP2PBackgrnd</strong> = 0, this set of loops refer to FitHiChIP(L+M) output.</li>
-<li>If <strong>UseP2PBackgrnd</strong> = 1, this set of loops are denoted as FitHiChIP(S+M) in the manuscript.</li>
+<li>If <strong>UseP2PBackgrnd</strong> = 1, this set of loops refer to FitHiChIP(S+M) output.</li>
 </ol>
 </div>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”_MergeNearContacts_WashU.bed.*</strong>:</p>
+<li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”_MergeNearContacts_WashU.bed.gz.*</strong>:</p>
 <blockquote>
-<div><p>WashU epigenome browser compatible loops.</p>
+<div><p>Significant FitHiChIP loops (<strong>*PREFIX*.interactions_FitHiC_Q”qval”_MergeNearContacts.bed</strong>) converted to WashU epigenome browser compatible format.</p>
 </div></blockquote>
 </li>
 </ul>
@@ -282,6 +314,8 @@ and the distance thresholds (parameters B.7 and B.8)</p>
 </li>
 </ul>
 </div></blockquote>
+</li>
+</ul>
 </div></blockquote>
 </li>
 </ul>
@@ -292,62 +326,56 @@ and the distance thresholds (parameters B.7 and B.8)</p>
 </div>
 <div class="section" id="visualizing-significant-interactions-in-washu-epigenome-browser">
 <h2>Visualizing significant interactions in WashU epigenome browser<a class="headerlink" href="#visualizing-significant-interactions-in-washu-epigenome-browser" title="Permalink to this headline">¶</a></h2>
-<p>FitHiChIP interactions can be loaded in the WashU epigenome browser for visualizing the significant interactions.</p>
+<p>FitHiChIP interactions can be readily visualized in the WashU epigenome browser:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>Two different versions of WashU epigenome browser currently exist:</p>
 <blockquote>
-<div><p><strong>current</strong> (&lt;<a class="reference external" href="http://epigenomegateway.wustl.edu/browser/">http://epigenomegateway.wustl.edu/browser/</a>&gt;) and</p>
-<p><strong>legacy</strong> (&lt;<a class="reference external" href="http://epigenomegateway.wustl.edu/legacy/">http://epigenomegateway.wustl.edu/legacy/</a>&gt;).</p>
+<div><p><strong>current</strong> (<a class="reference external" href="http://epigenomegateway.wustl.edu/browser/">http://epigenomegateway.wustl.edu/browser/</a>) and</p>
+<p><strong>legacy</strong> (<a class="reference external" href="http://epigenomegateway.wustl.edu/legacy/">http://epigenomegateway.wustl.edu/legacy/</a>).</p>
 </div></blockquote>
-<p class="last">These two versions have substantial differences, so we describe using both of these versions.</p>
+<p class="last">These two versions have substantial differences - file formats supported in these two versions are also different. So, we describe using both of these versions.</p>
 </div>
 <div class="section" id="using-current-version">
-<h3>Using <strong>current</strong> version<a class="headerlink" href="#using-current-version" title="Permalink to this headline">¶</a></h3>
-<p>The files <strong>*_WashU.bed.gz</strong> mentioned above (FitHiChIP generated significant loops, with or without applying merged filtering) are all
-compatible with the <strong>current</strong> version. User can visualize these tracks by following these steps:</p>
+<h3>Using current version<a class="headerlink" href="#using-current-version" title="Permalink to this headline">¶</a></h3>
+<p>The files <strong>*_WashU.bed.gz</strong> mentioned above are all compatible with the <strong>current</strong> version. User can visualize these tracks by step by step execution of the following procedure:</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Open &lt;<a class="reference external" href="http://epigenomegateway.wustl.edu/browser/">http://epigenomegateway.wustl.edu/browser/</a>&gt;</li>
-<li>Select reference genome.</li>
+<li>Open <a class="reference external" href="http://epigenomegateway.wustl.edu/browser/">http://epigenomegateway.wustl.edu/browser/</a> in a browser.</li>
+<li>Select reference genome. For the test data, human (hg19) is the reference genome.</li>
 <li>select <strong>Tracks</strong> -&gt; <strong>upload Local Track</strong></li>
 <li>Choose track file type: <strong>longrange</strong></li>
 <li>Choose track file: select both <strong>*_WashU.bed.gz</strong> and <strong>*_WashU.bed.gz.tbi</strong> files <strong>together (2 files)</strong>.</li>
-<li>Close the track upload box (right corner - (X) sign)</li>
-<li>Now right click on the track name, and select <strong>DISPLAY MODE</strong> as <strong>ARC</strong></li>
+<li>Close the track upload box (click at the (X) sign in the right corner)</li>
+<li>Now the track is displayed in the browser window. Right click on the track name, and select <strong>DISPLAY MODE</strong> as <strong>ARC</strong></li>
 </ol>
 </div></blockquote>
 </div>
 <div class="section" id="using-legacy-version">
-<h3>Using <strong>legacy</strong> version<a class="headerlink" href="#using-legacy-version" title="Permalink to this headline">¶</a></h3>
-<p>User would need to convert the FitHiChIP significant loops (in .bed format, not gzipped version) as the following:</p>
+<h3>Using legacy version<a class="headerlink" href="#using-legacy-version" title="Permalink to this headline">¶</a></h3>
+<p>User needs to convert the FitHiChIP significant loops (in .bed format, not gzipped version) as the following:</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p class="first">Output of FitHiChIP(L) or FitHiChIP(S) - file <strong>FitHiC_Q”qval”.bed</strong></p>
+<li><p class="first">Output of <strong>FitHiChIP(L)</strong> or <strong>FitHiChIP(S)</strong> - file <strong>FitHiC_Q”qval”.bed</strong></p>
 <blockquote>
-<div><p>Let us denote the file as <em>inp.bed</em>.
-It contains header line, first 6 fields denote the interacting bins and the last field denotes the q-value.
-User needs to apply the following awk script to this file:</p>
+<div><p>Let us denote the file as <em>inp.bed</em>. It contains a header line. First 6 fields denote the interacting bins and the last field denotes the q-value. User needs to apply the <strong>following awk script</strong> to this file:</p>
 <blockquote>
-<div><p>awk -F[‘t’] ‘{if (NR &gt; 1) {if ($NF &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t”(-log($NF)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t500”}}}’ <em>inp.bed</em> &gt; <em>out_WashU.bed</em></p>
+<div><p>awk -F[‘\t’] ‘{if (NR &gt; 1) {if ($NF &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t”(-log($NF)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t500”}}}’ <em>inp.bed</em> &gt; <em>out_WashU.bed</em></p>
 </div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first">Output of FitHiChIP(L+M) or FitHiChIP(S+M) -  file <strong>FitHiC_Q”qval”_MergeNearContacts.bed</strong></p>
+<li><p class="first">Output of <strong>FitHiChIP(L+M)</strong> or <strong>FitHiChIP(S+M)</strong> -  file <strong>FitHiC_Q”qval”_MergeNearContacts.bed</strong></p>
 <blockquote>
-<div><p>Let us denote the file as <em>inp_merged.bed</em>.
-It contains header line, first 6 fields denote the interacting bins and the 9th field stores the q-value.
-User needs to apply the following awk script to this file:</p>
-<p>awk -F[‘t’] ‘{if (NR &gt; 1) {if ($9 &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t”(-log($9)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t500”}}}’ <em>inp_merged.bed</em> &gt; <em>out_merged_WashU.bed</em></p>
+<div><p>Let us denote the file as <em>inp_merged.bed</em>. It contains a header line. First 6 fields denote the interacting bins and the 9th field stores the q-value. User needs to apply the following awk script to this file:</p>
+<p>awk -F[‘\t’] ‘{if (NR &gt; 1) {if ($9 &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t”(-log($9)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t500”}}}’ <em>inp_merged.bed</em> &gt; <em>out_merged_WashU.bed</em></p>
 </div></blockquote>
 </li>
 </ol>
 </div></blockquote>
-<p>Now user needs to upload the generated .bed file (<strong>Note: we do not need to convert them in gzipped / tabix formats</strong>) in the epigenome browser, by
-performing the following steps.</p>
+<p>Now user needs to upload the generated .bed file (<strong>Note: we do not need to convert them in gzipped / tabix formats</strong>) in the epigenome browser, by performing the following steps.</p>
 <blockquote>
 <div><ol class="arabic simple">
-<li>Open &lt;<a class="reference external" href="http://epigenomegateway.wustl.edu/legacy/">http://epigenomegateway.wustl.edu/legacy/</a>&gt;</li>
+<li>Open <a class="reference external" href="http://epigenomegateway.wustl.edu/legacy/">http://epigenomegateway.wustl.edu/legacy/</a></li>
 <li>Select reference genome.</li>
 <li>Select <strong>Genome Browser</strong> -&gt; <strong>Apps</strong> -&gt; <strong>File upload</strong> -&gt; <strong>Choose files</strong></li>
 <li>Select the generated WashU bed file and click <strong>setup</strong></li>
@@ -363,15 +391,15 @@ performing the following steps.</p>
 User should perform the following steps:</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p class="first">Check the link &lt;<a class="reference external" href="https://genome.ucsc.edu/goldenPath/help/interact.html">https://genome.ucsc.edu/goldenPath/help/interact.html</a>&gt;, example 4, for reference.</p>
+<li><p class="first">Check the link <a class="reference external" href="https://genome.ucsc.edu/goldenPath/help/interact.html">https://genome.ucsc.edu/goldenPath/help/interact.html</a>, example 4, for reference.</p>
 </li>
 <li><p class="first">Download UCSC <strong>bedToBigBed</strong> utility function, store it in system.</p>
 </li>
 <li><p class="first">Download the file <strong>interact.as</strong> (specified in the above mentioned link) and store it in the system.</p>
 </li>
-<li><p class="first">Then, to convert the FitHiChIP(L) or FitHiChIP(S) generated significant interactions (file <strong>FitHiC_Q”qval”.bed</strong>) into bed format, using the following command:</p>
+<li><p class="first">Then, to convert the FitHiChIP(L) or FitHiChIP(S) generated significant interactions (file <strong>FitHiC_Q”qval”.bed</strong>) into bed format, use the following command:</p>
 <blockquote>
-<div><p>awk -F’[t]’ ‘{if (NR&gt;1) {if ($NF&gt;0) {a=int(-log($NF)/log(10)) + 1} else {a=500}; b=100; print $1”t”(($2+$3)/2-1)”t”(($5+$6)/2+1)”t.t”a”t”b”t.t#0000FFt”$1”t”(($2+$3)/2-1)”t”(($2+$3)/2+1)”t.t.t”$4”t”(($5+$6)/2-1)”t”(($5+$6)/2+1)”t.t.”}}’ <em>FitHiC_Q”qval”.bed</em> | sort -k1,1 -k2,2n -k3,3n &gt; <em>out_FitHiChIP_converted.bed</em></p>
+<div><p>awk -F’[\t]’ ‘{if (NR&gt;1) {if ($NF&gt;0) {a=int(-log($NF)/log(10)) + 1} else {a=500}; b=100; print $1”\t”(($2+$3)/2-1)”\t”(($5+$6)/2+1)”\t.\t”a”\t”b”\t.\t#0000FF\t”$1”\t”(($2+$3)/2-1)”\t”(($2+$3)/2+1)”\t.\t.\t”$4”\t”(($5+$6)/2-1)”\t”(($5+$6)/2+1)”\t.\t.”}}’ <em>FitHiC_Q”qval”.bed</em> | sort -k1,1 -k2,2n -k3,3n &gt; <em>out_FitHiChIP_converted.bed</em></p>
 </div></blockquote>
 </li>
 <li><p class="first">Then convert the generated file into BigBed format as</p>
@@ -388,29 +416,60 @@ User should perform the following steps:</p>
 </div></blockquote>
 </div></blockquote>
 </li>
+<li><p class="first">To convert the output of FitHiChIP(L+M) or FitHiChIP(S+M) (file <strong>FitHiC_Q”qval”_MergeNearContacts.bed</strong>), replace “$NF” with “$9” in the command mentioned in (4). Rest of the procedure is similar.</p>
+</li>
 </ol>
-<p>6. To convert the output of FitHiChIP(L+M) or FitHiChIP(S+M) (file <strong>FitHiC_Q”qval”_MergeNearContacts.bed</strong>), replace “$NF” with “$9” in the command
-mentioned in (4). Rest of the procedure is similar.</p>
 </div></blockquote>
 </div>
 </div>
 
 
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="DiffLoops.html" class="btn btn-neutral float-right" title="Differential analysis of HiChIP loops" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuration.html" class="btn btn-neutral float-left" title="Setting up configuration file" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-      
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Sourya Bhattacharyya, Ferhat Ay.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.<br/>
+        &copy; Copyright 2019, Sourya Bhattacharyya, Ferhat Ay
+
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
 </footer>
-  </body>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>

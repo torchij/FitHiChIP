@@ -1,131 +1,161 @@
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Setting up configuration file &#8212; FitHiChIP 0.1 documentation</title>
-    <link rel="stylesheet" href="../static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
-    <script type="text/javascript" src="../static/jquery.js"></script>
-    <script type="text/javascript" src="../static/underscore.js"></script>
-    <script type="text/javascript" src="../static/doctools.js"></script>
-    <script type="text/javascript" src="../static/language_data.js"></script>
-    <script type="text/javascript" src="../static/js/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="../static/js/jquery-fix.js"></script>
-    <script type="text/javascript" src="../static/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../static/bootstrap-sphinx.js"></script>
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setting up configuration file &mdash; FitHiChIP 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../static/documentation_options.js"></script>
+        <script type="text/javascript" src="../static/jquery.js"></script>
+        <script type="text/javascript" src="../static/underscore.js"></script>
+        <script type="text/javascript" src="../static/doctools.js"></script>
+        <script type="text/javascript" src="../static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Details of FitHiChIP outputs" href="output.html" />
-    <link rel="prev" title="Quick start" href="quickstart.html" />
-<meta charset='utf-8'>
-<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
-<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="prev" title="Quick start" href="quickstart.html" /> 
+</head>
 
-  </head><body>
+<body class="wy-body-for-nav">
 
-  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="../index.html">
-          FitHiChIP</a>
-        <span class="navbar-text navbar-version pull-left"><b></b></span>
-      </div>
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
 
-        <div class="collapse navbar-collapse nav-collapse">
-          <ul class="nav navbar-nav">
+          
+            <a href="../index.html" class="icon icon-home"> FitHiChIP
+          
+
+          
+          </a>
+
+          
             
             
-              <li class="dropdown globaltoc-container">
-  <a role="button"
-     id="dLabelGlobalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="../index.html">Site <b class="caret"></b></a>
-  <ul class="dropdown-menu globaltoc"
-      role="menu"
-      aria-labelledby="dLabelGlobalToc"><ul class="current">
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quick start</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up configuration file</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up configuration file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#a-support-of-input-file-formats">A) Support of input file formats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#b-other-important-parameters">B) Other important parameters</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="output.html">Details of FitHiChIP outputs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="DiffLoops.html">Differential analysis of HiChIP loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Utilities.html">Various utility scripts / functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently asked question</a></li>
 </ul>
-</ul>
-</li>
-              
-                <li class="dropdown">
-  <a role="button"
-     id="dLabelLocalToc"
-     data-toggle="dropdown"
-     data-target="#"
-     href="#">Page <b class="caret"></b></a>
-  <ul class="dropdown-menu localtoc"
-      role="menu"
-      aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Setting up configuration file</a><ul>
-<li><a class="reference internal" href="#a-support-of-input-file-formats">A) Support of input file formats</a></li>
-<li><a class="reference internal" href="#b-other-important-parameters">B) Other important parameters</a></li>
-</ul>
-</li>
-</ul>
-</ul>
-</li>
-              
-            
-            
-              
-                
-  <li>
-    <a href="quickstart.html" title="Previous Chapter: Quick start"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Quick start</span>
-    </a>
-  </li>
-  <li>
-    <a href="output.html" title="Next Chapter: Details of FitHiChIP outputs"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Details of Fi... &raquo;</span>
-    </a>
-  </li>
-              
-            
-            
-            
-            
-              <li class="hidden-sm">
-<div id="sourcelink">
-  <a href="../sources/usage/configuration.rst.txt"
-     rel="nofollow">Source</a>
-</div></li>
-            
-          </ul>
 
-          
             
-<form class="navbar-form navbar-right" action="../search.html" method="get">
- <div class="form-group">
-  <input type="text" name="q" class="form-control" placeholder="Search" />
- </div>
-  <input type="hidden" name="check_keywords" value="yes" />
-  <input type="hidden" name="area" value="default" />
-</form>
           
         </div>
-    </div>
-  </div>
+      </div>
+    </nav>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-12 content">
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
       
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">FitHiChIP</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Setting up configuration file</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../sources/usage/configuration.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="setting-up-configuration-file">
 <h1>Setting up configuration file<a class="headerlink" href="#setting-up-configuration-file" title="Permalink to this headline">¶</a></h1>
 <p>As mentioned in the Quick Start module, FitHiChIP is executed by typing the following command in a bash terminal (assuming the executable is in current directory):</p>
@@ -148,7 +178,7 @@
 <div class="section" id="a-support-of-input-file-formats">
 <h2>A) Support of input file formats<a class="headerlink" href="#a-support-of-input-file-formats" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><p>FitHiChIP supports inputs in either of three possible options:</p>
+<div><p>FitHiChIP supports input interaction file in <strong>either of three possible options</strong>:</p>
 <ol class="arabic simple">
 <li>Either specify the parameter A.1</li>
 <li>Or, specify both the parameters A.2 and A.3</li>
@@ -158,22 +188,22 @@
 <p>A.1) ValidPairs:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Valid pairs generated by HiC-pro pipeline (either simple text format, or can be in gzipped format).</li>
+<li>Valid pairs generated by HiC-pro pipeline (either <strong>simple text</strong> format, or can be in <strong>gzipped</strong> format).</li>
 </ul>
 </div></blockquote>
 <p>A.2) Interval:</p>
 <blockquote>
 <div><ul class="simple">
-<li>File depicting the bins of the interaction matrix. Generated by applying HiC-pro pipeline utility function <strong>build_matrix</strong> on the valid pairs file.</li>
+<li>File depicting the bins / intervals of the interaction matrix. Generated by applying HiC-pro pipeline utility function <strong>build_matrix</strong> on the valid pairs file.</li>
 <li>Size of an interval depends on the bin size. Individual bins are also assigned a distinct number.</li>
-<li>By default, this file name ends with a suffix ‘_abs.bed’.</li>
+<li>By default, name of this file ends with a suffix <strong>_abs.bed</strong></li>
 </ul>
 </div></blockquote>
 <p>A.3) Matrix:</p>
 <blockquote>
 <div><ul class="simple">
-<li>File listing the number of interactions (contacts) among the bins listed in the “Interval” file.</li>
-<li>The file has three columns: bin1 (first interacting bin), bin2 (second interacting bin), cc (contact counts)</li>
+<li>File listing the number of interactions (contacts) among the bins listed in the <strong>Interval</strong> (parameter A.2) file.</li>
+<li>The file has three columns: 1) first interacting bin number, 2) second interacting bin number, 3) contact count between those two bins.</li>
 <li>Generated by applying HiC-pro pipeline utility function <strong>build_matrix</strong> on the valid pairs file.</li>
 </ul>
 </div></blockquote>
@@ -195,13 +225,12 @@
 <blockquote>
 <div><ul class="simple">
 <li>Reference ChIP-seq or HiChIP peak file. <strong>Mandatory parameter.</strong></li>
-<li>User may use pre-computed ChIP-seq peaks in ENCODE,</li>
+<li>User may use pre-computed ChIP-seq peaks in ENCODE (<a class="reference external" href="https://www.encodeproject.org/">https://www.encodeproject.org/</a>),</li>
 <li>or, user may compute HiChIP peaks and use them (described in the page <a class="reference internal" href="Utilities.html#various-utility-scripts-functions"><span class="std std-ref">Various utility scripts / functions</span></a>).</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">user may employ MACS2, or a recent package hichipper (Lareau et al 2018) to compute the peaks from HiChIP data,
-and provide the bed formatted peak file as an input to FitHiChIP.</p>
+<p class="last">user may employ <strong>macs2</strong>, or a recent package <strong>hichipper</strong> (Lareau et al 2018) to compute the peaks from HiChIP data, and provide the bed formatted peak file as an input to FitHiChIP.</p>
 </div>
 </div></blockquote>
 <p>B.2) OutDir:</p>
@@ -234,6 +263,10 @@ and provide the bed formatted peak file as an input to FitHiChIP.</p>
 <li><strong>all to all</strong>: Interactions between every possible pairs of segments, similar to Hi-C.</li>
 <li>Everything from 1 to 4. That is, all of the above mentioned interactions are computed.</li>
 </ol>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Default is 3, i.e. peak-to-all (both peak-to-peak and peak-to-nonpeak interactions are reported by FitHiChIP)</p>
+</div>
 </div></blockquote>
 <p>B.6) BINSIZE:</p>
 <blockquote>
@@ -301,21 +334,52 @@ and provide the bed formatted peak file as an input to FitHiChIP.</p>
 </div>
 
 
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="output.html" class="btn btn-neutral float-right" title="Details of FitHiChIP outputs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quick start" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
-      
-  </div>
-</div>
-<footer class="footer">
-  <div class="container">
-    <p class="pull-right">
-      <a href="#">Back to top</a>
-      
-    </p>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
     <p>
-        &copy; Copyright 2019, Sourya Bhattacharyya, Ferhat Ay.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.3.<br/>
+        &copy; Copyright 2019, Sourya Bhattacharyya, Ferhat Ay
+
     </p>
   </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
 </footer>
-  </body>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
 </html>
