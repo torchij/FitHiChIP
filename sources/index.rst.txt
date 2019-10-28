@@ -16,10 +16,17 @@ Welcome to FitHiChIP!
 Utilities of FitHiChIP at a glance
 ------------------------------------
 
-	- FitHiChIP derives the statistically significant CIS interactions from a given HiChIP / PLAC-seq, and now for HiC data as well. CIS Interactions within a specified distance range (default = 20 Kb to 2 Mb: can be user defined) and for a specified fixed size bin size, are computed. Distance decay model proposed in the method FitHiC (Ay and Noble, Genome Research  2014) together with a novel bias (coverage / ICE) regression model is used to find the statistical significant interactions.
-	- Processing HiChIP / PLAC-seq requires specifying ChIP-seq peaks corresponding to the target protein or histone modifications of interest. Either user can provide ChIP-seq peak files from ENCODE, ROADMAP, or any other reference. Alternatively, FitHiChIP supports calling peaks from HiChIP data, which can be used to find out the interactions involving peaks (enriched) segments.
-	- FitHiChIP also supports finding differential HiChIP contacts between two different categories of HiChIP data, having one or more replicates.
-	- FitHiChIP also proposes a basic implementation of simulating HiChIP contact map given a reference HiC contact map and a ChIP-seq alignment file, with respect to specified number of reads. (**Note**: this implementation is still in basic stage; output HiChIP heatmap shows explicit bias towards low range contacts.)	
+	- FitHiChIP derives the statistically significant CIS interactions from a given **HiChIP / PLAC-seq**, and now for **Hi-C** data as well.
+		- CIS Interactions within a specified distance range (default = 20 Kb to 2 Mb: can be user defined) and for a specified fixed size bin size, are computed. 
+		- Distance decay model proposed in the method FitHiC (Ay and Noble, Genome Research  2014) together with a novel bias (coverage / ICE) regression model is used to find the statistical significant interactions.
+	
+	- Processing HiChIP / PLAC-seq requires specifying ChIP-seq peaks corresponding to the target protein or histone modifications of interest. 
+		- Either user can provide ChIP-seq peak files from ENCODE, ROADMAP, or any other reference. 
+		- Alternatively, **FitHiChIP supports calling peaks from HiChIP data**, which can be used to find out the interactions involving peaks (enriched) segments.
+	
+	- FitHiChIP also supports finding **differential HiChIP contacts** between two different categories of HiChIP data, having one or more replicates.
+
+	- FitHiChIP also proposes a basic implementation of **simulating HiChIP contact map given a reference HiC contact map and a ChIP-seq alignment file**, with respect to specified number of reads. (**Note**: this implementation is still in basic stage; output HiChIP heatmap shows explicit bias towards low range contacts.)	
 
 Repository 
 -----------
