@@ -351,8 +351,7 @@ Users are advised to keep this value.</td></tr>
 <p>The script is to be executed as</p>
 <p>Rscript Imp_Scripts/HiC_Simulate_by_ChIP_Coverage.r <strong>[OPTIONS]</strong></p>
 <p>Where, <strong>[OPTIONS]</strong> are the following:</p>
-<blockquote>
-<div><table class="docutils option-list" frame="void" rules="none">
+<table class="docutils option-list" frame="void" rules="none">
 <col class="option" />
 <col class="description" />
 <tbody valign="top">
@@ -363,59 +362,49 @@ Users are advised to keep this value.</td></tr>
 <li>If nothing is provided, all chromosomes within the specified chromosome size file of the reference genome would be analyzed.</li>
 </ul>
 </td></tr>
-</tbody>
-</table>
-<p class="attribution">&mdash;OutDir</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
+<tr><td class="option-group">
+<kbd><span class="option">--OutDir</span></kbd></td>
+<td><ul class="first last simple">
 <li>Output directory to contain the simulated results. <strong>Mandatory parameter</strong>.</li>
 </ul>
-</div></blockquote>
-<p class="attribution">&mdash;ChrSizeFile</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--ChrSizeFile</span></kbd></td>
+<td><ul class="first last simple">
 <li>File having the chromosome sizes for the reference genome.</li>
 <li>Same as the parameter (B.3) in FitHiChIP configuration options. <strong>Mandatory parameter</strong>.</li>
 </ul>
-</div></blockquote>
-<p class="attribution">&mdash;ChIPAlignFile</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">--ChIPAlignFile</span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td><ul class="first last simple">
 <li>ChIP-seq alignment file. <strong>Mandatory parameter</strong>.</li>
 <li>Can either be in BAM or Bedgraph (4-column) format**.</li>
 </ul>
-</div></blockquote>
-<p class="attribution">&mdash;HiCMapFile</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--HiCMapFile</span></kbd></td>
+<td><ul class="first simple">
 <li>Reference HiC contact map file, having the following fields in tab delimited format: chr1, start1, end1, chr2, start2, end2, cc.</li>
 <li>Here the triplet (chr,start,end) corresponds to one interacting interval. The field cc denotes the contact count between corresponding interacting regions. It can be either raw contact count, or normalized (by ICE).</li>
 </ul>
-<div class="admonition note">
+<div class="last admonition note">
 <p class="first admonition-title">Note</p>
 <ul class="last simple">
 <li>Output HiChIP would have the same resolution (bin size) as the input HiC map.</li>
 </ul>
 </div>
-</div></blockquote>
-<p class="attribution">&mdash;TotalRead</p>
-</div></blockquote>
-<blockquote>
-<div><blockquote>
-<div><ul class="simple">
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--TotalRead</span></kbd></td>
+<td><ul class="first last simple">
 <li>Total coverage of the output simulated HiChIP contact matrix. That is, total contact count in the simulated HiChIP contact map would be equal to this integer value.</li>
 <li>Default is 1000000, means the output simulated map would have 1M reads.</li>
 </ul>
-</div></blockquote>
-</div></blockquote>
+</td></tr>
+</tbody>
+</table>
 <p>Within the specified output folder <strong>OutDir</strong>, folders of the following name are created:</p>
 <blockquote>
 <div><p>Simulate_HiChIP_chr_*chrName*_B_*BinSize*</p>
