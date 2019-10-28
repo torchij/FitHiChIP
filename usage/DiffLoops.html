@@ -214,13 +214,13 @@
 <kbd><span class="option">--ChrSizeFile</span></kbd></td>
 <td><ul class="first last simple">
 <li>File having the chromosome sizes for the reference genome.</li>
-<li>Same as the parameter (B.4) in FitHiChIP configuration options. <strong>Mandatory parameter</strong>.</li>
+<li>Same as the parameter (B.3) in FitHiChIP configuration options. <strong>Mandatory parameter</strong>.</li>
 </ul>
 </td></tr>
 <tr><td class="option-group">
 <kbd><span class="option">--FDRThr</span></kbd></td>
 <td><ul class="first last simple">
-<li>FDR significance threshold for FitHiChIP loops. Default = 0.01. Same as the parameter (B.9) in FitHiChIP configuration options.</li>
+<li>FDR significance threshold for FitHiChIP loops. Default = 0.01. Same as the parameter (B.8) in FitHiChIP configuration options.</li>
 </ul>
 </td></tr>
 <tr><td class="option-group">
@@ -241,7 +241,10 @@
 </ul>
 <div class="last admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">ChIP-seq alignment files matching with the given HiChIP data (cell type, histone modifications of interest) can be downloaded from ENCODE (<a class="reference external" href="https://www.encodeproject.org/">https://www.encodeproject.org/</a>).</p>
+<ul class="last simple">
+<li>ChIP-seq alignment files matching with the given HiChIP data (cell type, histone modifications of interest) can be downloaded from ENCODE (<a class="reference external" href="https://www.encodeproject.org/">https://www.encodeproject.org/</a>).</li>
+<li><strong>File can either be in BAM or Bedgraph (4-column) format</strong>.</li>
+</ul>
 </div>
 </td></tr>
 <tr><td class="option-group">

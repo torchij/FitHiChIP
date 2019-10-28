@@ -224,7 +224,13 @@
 <p>B.1) PeakFile:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Reference ChIP-seq or HiChIP peak file. <strong>Mandatory parameter.</strong></li>
+<li>Reference ChIP-seq or HiChIP peak file.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a mandatory parameter if user is analyzing HiChIP data and <strong>IntType</strong> (parameter (B.4)) is 1, 2, 3 or 5.</p>
+</div>
+<ul class="simple">
 <li>User may use pre-computed ChIP-seq peaks in ENCODE (<a class="reference external" href="https://www.encodeproject.org/">https://www.encodeproject.org/</a>),</li>
 <li>or, user may compute HiChIP peaks and use them (described in the page <a class="reference internal" href="Utilities.html#various-utility-scripts-functions"><span class="std std-ref">Various utility scripts / functions</span></a>).</li>
 </ul>
@@ -240,20 +246,14 @@
 <li>Default: present working directory.</li>
 </ul>
 </div></blockquote>
-<p>B.3) HiCProBasedir:</p>
-<blockquote>
-<div><ul class="simple">
-<li>Installation directory of HiC-pro package (example: /custom_path/HiCPro/HiC-Pro_2.9.0/). <strong>Mandatory parameter.</strong></li>
-</ul>
-</div></blockquote>
-<p>B.4) ChrSizeFile:</p>
+<p>B.3) ChrSizeFile:</p>
 <blockquote>
 <div><ul class="simple">
 <li>File containing the chromosome size corresponding to the reference genome. <strong>Mandatory parameter.</strong></li>
 <li>For example, the file <strong>chrom_hg19.sizes</strong> within the folder “TestData” is applicable for the reference genome hg19.</li>
 </ul>
 </div></blockquote>
-<p>B.5) IntType:</p>
+<p>B.4) IntType:</p>
 <blockquote>
 <div><p>Type of interaction (foreground) reported by FitHiChIP. Options are:</p>
 <ol class="arabic simple">
@@ -268,19 +268,19 @@
 <p class="last">Default is 3, i.e. peak-to-all (both peak-to-peak and peak-to-nonpeak interactions are reported by FitHiChIP)</p>
 </div>
 </div></blockquote>
-<p>B.6) BINSIZE:</p>
+<p>B.5) BINSIZE:</p>
 <blockquote>
 <div>Size of the bins, depicting the resolution employed. Default= 5000 (means 5 Kb resolution)</div></blockquote>
-<p>B.7) LowDistThr:</p>
+<p>B.6) LowDistThr:</p>
 <blockquote>
 <div>Lower distance threshold of interaction between two intervals (CIS). Default: 20000 (indicates 20 Kb). Interactions below this distance threshold will not be considered for statistical significance.</div></blockquote>
-<p>B.8) UppDistThr:</p>
+<p>B.7) UppDistThr:</p>
 <blockquote>
 <div>Upper distance threshold of interaction between two intervals (CIS). Default: 2000000 (indicates 2 Mb). Interactions above this distance threshold will not be considered for statistical significance.</div></blockquote>
-<p>B.9) QVALUE:</p>
+<p>B.8) QVALUE:</p>
 <blockquote>
 <div>Minimum FDR (q-value) cutoff for detecting significant interactions. Default: 0.01</div></blockquote>
-<p>B.10) UseP2PBackgrnd:</p>
+<p>B.9) UseP2PBackgrnd:</p>
 <blockquote>
 <div><p>Can be 0 or 1. Applicable only for peak to all interactions (IntType = 3).</p>
 <blockquote>
@@ -294,7 +294,7 @@
 </div>
 </div></blockquote>
 </div></blockquote>
-<p>B.11) BiasType:</p>
+<p>B.10) BiasType:</p>
 <blockquote>
 <div><p>Can be 1 or 2. Indicates the type of bias correction used.</p>
 <blockquote>
@@ -308,7 +308,7 @@
 </div>
 </div></blockquote>
 </div></blockquote>
-<p>B.12) MergeInt:</p>
+<p>B.11) MergeInt:</p>
 <blockquote>
 <div><ul class="simple">
 <li>Has the value 0 or 1.</li>
@@ -316,10 +316,10 @@
 <li><strong>We recommend setting this value as 1.</strong></li>
 </ul>
 </div></blockquote>
-<p>B.13) PREFIX:</p>
+<p>B.12) PREFIX:</p>
 <blockquote>
 <div>Prefix string used before any output file name. Default = “FitHiChIP”</div></blockquote>
-<p>B.14) OverWrite:</p>
+<p>B.13) OverWrite:</p>
 <blockquote>
 <div><p>A binary variable (1/0).</p>
 <blockquote>

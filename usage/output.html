@@ -178,12 +178,12 @@
 </li>
 <li><p class="first"><strong>HiCPro_Matrix_BinSize”BINSIZE”</strong>:</p>
 <blockquote>
-<div><p>Folder name is according to the parameter (B.6).</p>
+<div><p>Where “BINSIZE” is specified in the parameter (B.5).</p>
 <p>If the parameters (A.2) and (A.3) are empty, this directory contains the interaction matrix files (named as <em>MatrixHiCPro_abs.bed</em> and <em>MatrixHiCPro.matrix</em>) generated from the input valid pairs file (parameter A.1).</p>
 <ul>
 <li><p class="first"><strong>*.interactions.initial.bed</strong>: CIS locus pairs along with their contact counts, corresponding to the input valid pairs (or contact matrix).</p>
 </li>
-<li><p class="first"><strong>L_”l”_U”u”</strong>: folder name according to the distance thresholds “l” and “u” specified in the parameters (B.7) and (B.8).</p>
+<li><p class="first"><strong>L_”l”_U”u”</strong>: folder name according to the distance thresholds “l” and “u” specified in the parameters (B.6) and (B.7).</p>
 <blockquote>
 <div><ul class="simple">
 <li><strong>*.cis.interactions.DistThr.bed</strong>: File containing CIS interactions within the distance range from “l” to “u”.</li>
@@ -203,7 +203,7 @@
 <li>Columns 1 to 3: chromosome bin.</li>
 <li>Column 4: Coverage of this bin (number of reads mapped onto it)</li>
 <li>Column 5: if 1, this bin is a <em>peak-bin</em> (overlapping with the reference peaks, provided in the parameter B.1); otherwise (0) <em>non-peak bin</em>.</li>
-<li>Column 6: Bias value of a bin; either coverage or ICE bias depending on the parameter B.11</li>
+<li>Column 6: Bias value of a bin; either coverage or ICE bias depending on the parameter B.10</li>
 <li>Columns 7 and 8: unused columns.</li>
 </ul>
 </div></blockquote>
@@ -213,15 +213,15 @@
 </li>
 <li><p class="first"><strong>FitHiChIP_”INTTYPE”_b”BINSIZE”_L”l”_U”u”</strong></p>
 <blockquote>
-<div><p>Folder according to the specified foreground (type of interactions to be reported; parameter B.5), bin size (parameter B.6), and the distance thresholds (parameters B.7 and B.8)</p>
+<div><p>Folder according to the specified foreground (type of interactions to be reported; parameter B.4), bin size (parameter B.5), and the distance thresholds (parameters B.6 and B.7)</p>
 <ul>
 <li><p class="first">INTTYPE is a string with one of the following values:</p>
 <blockquote>
 <div><ul class="simple">
-<li>ALL2ALL (when the parameter B.5 = 4)</li>
-<li>Peak2Peak (parameter B.5 = 1),</li>
-<li>Peak2NonPeak (parameter B.5 = 2), or</li>
-<li>Peak2ALL (parameter B.5 = 3).</li>
+<li>ALL2ALL (when the parameter B.4 = 4)</li>
+<li>Peak2Peak (parameter B.4 = 1),</li>
+<li>Peak2NonPeak (parameter B.4 = 2), or</li>
+<li>Peak2ALL (parameter B.4 = 3).</li>
 </ul>
 </div></blockquote>
 </li>
@@ -234,8 +234,8 @@
 <p>Where:</p>
 <blockquote>
 <div><ul class="simple">
-<li>[UseP2PBackgrnd]: Value of the parameter (B.10) - 0 (loose background) or 1 (stringent background).</li>
-<li>[BiasType]: A string, either “Coverage_Bias” or “ICE_Bias”, according to the parameter (B.11).</li>
+<li>[UseP2PBackgrnd]: Value of the parameter (B.9) - 0 (loose background) or 1 (stringent background).</li>
+<li>[BiasType]: A string, either “Coverage_Bias” or “ICE_Bias”, according to the parameter (B.10).</li>
 </ul>
 </div></blockquote>
 <ul>
@@ -254,7 +254,7 @@
 <li><p class="first"><strong>*PREFIX*.interactions_FitHiC.bed</strong>: Lists all input interactions along with their significance (p-value and FDR) computed using FitHiChIP.</p>
 <blockquote>
 <div><ul class="simple">
-<li>Value of <strong>PREFIX</strong> is provided in the configuration parameter (B.13)</li>
+<li>Value of <strong>PREFIX</strong> is provided in the configuration parameter (B.12)</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -264,7 +264,7 @@
 </li>
 <li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”.bed</strong>:</p>
 <blockquote>
-<div><p>FitHiChIP generated set of significant interactions according to the q-value threshold (QVALUE) specified in parameter (B.9).</p>
+<div><p>FitHiChIP generated set of significant interactions according to the q-value threshold (QVALUE) specified in parameter (B.8).</p>
 <p>For example, if QVALUE=0.01 (default), the file name becomes <strong>*PREFIX*.interactions_FitHiC_Q0.01.bed</strong>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -290,7 +290,7 @@
 </li>
 <li><p class="first"><strong>Merge_Nearby_Interactions</strong>:</p>
 <blockquote>
-<div><p>Directory containing the output of merge filtering operation, if the parameter (B.12) = 1.</p>
+<div><p>Directory containing the output of merge filtering operation, if the parameter (B.11) = 1.</p>
 <ul>
 <li><p class="first"><strong>*PREFIX*.interactions_FitHiC_Q”qval”_MergeNearContacts.bed</strong>:</p>
 <blockquote>
@@ -367,7 +367,7 @@
 <li><p class="first">Output of <strong>FitHiChIP(L+M)</strong> or <strong>FitHiChIP(S+M)</strong> -  file <strong>FitHiC_Q”qval”_MergeNearContacts.bed</strong></p>
 <blockquote>
 <div><p>Let us denote the file as <em>inp_merged.bed</em>. It contains a header line. First 6 fields denote the interacting bins and the 9th field stores the q-value. User needs to apply the following awk script to this file:</p>
-<p>awk -F[‘\t’] ‘{if (NR &gt; 1) {if ($9 &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”t”(-log($9)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t500”}}}’ <em>inp_merged.bed</em> &gt; <em>out_merged_WashU.bed</em></p>
+<p>awk -F[‘\t’] ‘{if (NR &gt; 1) {if ($9 &gt; 0) {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t”(-log($9)/log(10))} else {print $1”,”(($2+$3)/2-1)”,”(($2+$3)/2+1)”\t”$4”,”(($5+$6)/2-1)”,”(($5+$6)/2+1)”\t500”}}}’ <em>inp_merged.bed</em> &gt; <em>out_merged_WashU.bed</em></p>
 </div></blockquote>
 </li>
 </ol>
