@@ -257,6 +257,12 @@ The dataset is described in the page <a class="reference internal" href="DiffLoo
 <li>FitHiChIP currently uses CIS interactions in the valid pairs file for modeling statistical significant interactions.</li>
 </ul>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Currently, chromosome information within the valid pairs file need to be alphanumeric, i.e. chr1, chr2, etc. If the validpairs file contains numeric chromosome information (like 1, 2, etc), they need to be replaced with chr1, chr2, etc.</li>
+</ul>
+</div>
 </div></blockquote>
 </li>
 <li><p class="first">PeakFile:</p>
@@ -268,7 +274,10 @@ The dataset is described in the page <a class="reference internal" href="DiffLoo
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">For a detailed understanding of inferring peaks from HiChIP data, please check the page <a class="reference internal" href="Utilities.html#various-utility-scripts-functions"><span class="std std-ref">Various utility scripts / functions</span></a> and also the FitHiChIP paper.</p>
+<ul class="last simple">
+<li>Chromosome information need to be alphanumeric.</li>
+<li>For a detailed understanding of inferring peaks from HiChIP data, please check the page <a class="reference internal" href="Utilities.html#various-utility-scripts-functions"><span class="std std-ref">Various utility scripts / functions</span></a> and also the FitHiChIP paper.</li>
+</ul>
 </div>
 </div></blockquote>
 </li>

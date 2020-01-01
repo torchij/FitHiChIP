@@ -194,6 +194,12 @@
 <p class="first admonition-title">Note</p>
 <p class="last">Usually, name of the valid pairs file generated from HiC-pro pipeline is <strong>${HICPRODIR}/hic_results/data/rawdata/rawdata.allValidPairs</strong> where <strong>${HICPRODIR}</strong> is the directory containing HiC-pro output.</p>
 </div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Currently, chromosome information within the valid pairs file need to be alphanumeric, i.e. chr1, chr2, etc. If the validpairs file contains numeric chromosome information (like 1, 2, etc), they need to be replaced with chr1, chr2, etc.</li>
+</ul>
+</div>
 </div></blockquote>
 <p>A.2) Interval:</p>
 <blockquote>
@@ -202,6 +208,12 @@
 <li>Size of an interval depends on the bin size. Individual bins are also assigned a distinct number.</li>
 <li>By default, name of this file ends with a suffix <strong>_abs.bed</strong></li>
 </ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<ul class="last simple">
+<li>Chromosome information need to be alphanumeric (as mentioned in the parameter A.1).</li>
+</ul>
+</div>
 </div></blockquote>
 <p>A.3) Matrix:</p>
 <blockquote>
