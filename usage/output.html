@@ -87,6 +87,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Details of FitHiChIP outputs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#summary-html-file">Summary HTML file</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#details-of-output-files">Details of output files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#details-of-fithichip-significant-interactions">Details of FitHiChIP significant interactions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#details-of-merge-filtering-output">Details of merge filtering output</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#visualizing-significant-interactions-in-washu-epigenome-browser">Visualizing significant interactions in WashU epigenome browser</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#using-current-version">Using current version</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#using-legacy-version">Using legacy version</a></li>
@@ -321,6 +323,49 @@
 </ul>
 </div></blockquote>
 </li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="details-of-fithichip-significant-interactions">
+<h2>Details of FitHiChIP significant interactions<a class="headerlink" href="#details-of-fithichip-significant-interactions" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned above, the file <strong>*PREFIX*.interactions_FitHiC.bed</strong> contains all the loops and their significance values. The file <strong>*PREFIX*.interactions_FitHiC_Q”qval”.bed</strong> contains the significant interactions with respect to the specified FDR threshold <strong>qval</strong></p>
+<p>Both of these files contain the following fields:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Fields 1 to 6 denote the interacting bins for a given interaction.</p>
+</li>
+<li><p class="first">Field 7 is the contact count.</p>
+</li>
+<li><p class="first">Fields 8 to 13 show various properties of the first interacting bin. This include the HiChIP coverage, whether the bin overlaps with ChIP-seq peak (isPeak), bias (coverage or ICE depending on the bias parameter), mappability, GC content, and number of restriction sites.</p>
+<blockquote>
+<div><p>Currently, the values of mappability, GC content, and number of restriction sites are set as 0. We did not remove the fields though, to keep the same output format.</p>
+</div></blockquote>
+</li>
+<li><p class="first">Fields 14 to 19 show the respective properties for the second interacting bin.</p>
+</li>
+<li><p class="first">Field 20 (p) denotes the spline fit probability.</p>
+</li>
+<li><p class="first">Field 21 (exp_cc_Bias) is the expected contact count of the current interaction, after applying bias regression model.</p>
+</li>
+<li><p class="first">Fields 22 and 23 denote the probability computed from the “exp_cc_Bias” value, and binomial distribution based refined probability value.</p>
+</li>
+<li><p class="first">Fields 24 and 25 show the final FitHiChiP p-value and q-value of the current interaction.</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="details-of-merge-filtering-output">
+<h2>Details of merge filtering output<a class="headerlink" href="#details-of-merge-filtering-output" title="Permalink to this headline">¶</a></h2>
+<p>As mentioned above, the file <strong>*PREFIX*.interactions_FitHiC_Q”qval”_MergeNearContacts.bed</strong> within the directory <strong>Merge_Nearby_Interactions</strong> contains the significant loops returned after merge filtering operation.</p>
+<p>This file contains the following fields:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>First 6 fields are the interacting bins corresponding to the retained set of interactions (after merge filtering).</li>
+<li>Next 3 fields denote the contact count, p-value and q-value of the retained interactions.</li>
+<li>bin1_low and bin1_high denotes the lower and upper coordinates of the first set of interacting bins (x axis of the proposed connected component model). For example, if the set of bins (x-1, y-1), (x, y) and (x+1,y+1) are provided as inputs, bin1_low becomes (x-1) * BINSIZE while bin1_high becomes (x+1) * BINSIZE.</li>
+<li>bin2_low and bin2_high, denotes the lower and upper coordinates of the second set of interacting bins. Considering the previous example, bin2_low = (y-1) * BINSIZE and bin2_high = (y+1) * BINSIZE</li>
+<li>sumCC denotes the sum of contact counts of all the significant interactions applied to the connected component model, with respect to the current retained interaction. Considering the above example, sumCC would be equal to the contact counts of interactions (x-1, y-1), (x, y) and (x+1,y+1).</li>
+<li>StrongConn is between 0 and 1, and denotes the fraction of all possible interactions within the connected component which are significant. Considering the above example, the connected component enclosing the bins (x-1), x, and (x+1) at one end, and the bins (y-1), y, and (y+1) at the other end, can have at most 9 interactions, out of which 3 are significant. So, StrongConn is 0.33 in this case. Higher value of StrongConn indicates dense connected region.</li>
 </ol>
 </div></blockquote>
 </div>
