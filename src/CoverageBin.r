@@ -1,9 +1,9 @@
 #!/usr/bin/env Rscript
 
-library(optparse)
-library(GenomicRanges)
-library(tools)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(GenomicRanges))
+suppressMessages(library(tools))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

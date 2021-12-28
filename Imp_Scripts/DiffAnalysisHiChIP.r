@@ -10,13 +10,13 @@
 
 # package to compute the overlap among intervals
 suppressMessages(library(GenomicRanges))
-library(optparse)
-library(edgeR)
-library(plyr)
-library(dplyr)
-library(ggplot2)
-library(tools)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(edgeR))
+suppressMessages(library(plyr))
+suppressMessages(library(dplyr))
+suppressMessages(library(ggplot2))
+suppressMessages(library(tools))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

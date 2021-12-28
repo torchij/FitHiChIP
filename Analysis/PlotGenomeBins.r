@@ -6,9 +6,9 @@
 #Author: Sourya Bhattacharyya
 #Vijay-Ay lab, LJI
 #===========================================================
-library(optparse)
-library(ggplot2)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

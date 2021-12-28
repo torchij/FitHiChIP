@@ -10,11 +10,10 @@
 #Vijay-Ay lab, LJI
 #===========================================================
 
-library(splines)
-library(fdrtool)
-library(parallel)	# library for parallel processing
-
-library(optparse)
+suppressMessages(library(splines))
+suppressMessages(library(fdrtool))
+suppressMessages(library(parallel))	# library for parallel processing
+suppressMessages(library(optparse))
 
 # #===========================
 # # parallel computation of binomial distribution on input vector

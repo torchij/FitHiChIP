@@ -8,8 +8,8 @@
 #Author: Sourya Bhattacharyya
 #Vijay-Ay lab, LJI
 #===========================================================
-library(optparse)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

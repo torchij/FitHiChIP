@@ -9,8 +9,8 @@
 #Vijay-Ay lab, LJI
 #===========================================================
 
-library(tools)
-library(data.table)
+suppressMessages(library(tools))
+suppressMessages(library(data.table))
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)
 

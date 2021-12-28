@@ -1,8 +1,8 @@
 #!/usr/bin/env Rscript
 
-library(optparse)
-library(tools)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(tools))
+suppressMessages(library(data.table))
 
 options(scipen=999)
 options(datatable.fread.datatable=FALSE)

@@ -14,8 +14,8 @@
 # usage: Rscript result_summary.r $inpfile
 #===========================================================
 
-library(ggplot2)
-library(data.table)
+suppressMessages(library(ggplot2))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

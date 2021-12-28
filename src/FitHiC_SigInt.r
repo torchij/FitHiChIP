@@ -17,12 +17,12 @@
 #Vijay-Ay lab, LJI
 #===========================================================
 
-library(splines)
-library(fdrtool)
-library(parallel)	# library for parallel processing
-library(optparse)
-library(ggplot2)
-library(data.table)
+suppressMessages(library(splines))
+suppressMessages(library(fdrtool))
+suppressMessages(library(parallel))	# library for parallel processing
+suppressMessages(library(optparse))
+suppressMessages(library(ggplot2))
+suppressMessages(library(data.table))
 
 options(scipen = 10)
 options(datatable.fread.datatable=FALSE)

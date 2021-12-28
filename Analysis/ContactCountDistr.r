@@ -9,7 +9,7 @@
 # usage: Rscript ContactCountDistr.r $PeakFile $InteractionFile $PlotFile $OutText
 #===========================================================
 
-library(data.table)
+suppressMessages(library(data.table))
 
 options(scipen = 999)
 options(datatable.fread.datatable=FALSE)

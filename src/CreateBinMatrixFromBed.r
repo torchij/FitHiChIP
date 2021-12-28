@@ -1,7 +1,7 @@
 #!/usr/bin/env Rscript
 
-library(optparse)
-library(data.table)
+suppressMessages(library(optparse))
+suppressMessages(library(data.table))
 suppressMessages(library(GenomicRanges))
 
 options(scipen = 10)
